@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.env
+*.log
+bundles/
+chat-transfer-*/
+recovery-rollout.jsonl
+recovered-compaction.md
+verify-response.md
+working-context.md
+manifest.json
+recovery-report.json
+semantic-receipt.json
+read-receipts.jsonl
+*.raw.jsonl
