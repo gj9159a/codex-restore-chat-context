@@ -1,0 +1,26 @@
+# Codex Restore Chat Context
+
+> A Windows Codex Desktop skill for continuing long chats in a new chat, recovering context from a frozen session, and transferring decisions, constraints, and unfinished tasks using the latest native compaction checkpoint plus all available continuation.
+
+This is an independent community tool. It reconstructs readable working context through a separate local recovery session; it does not directly inject encrypted state into the destination chat. Ordinary ChatGPT web/mobile conversations and cross-account or cross-computer migration are outside its scope.
+
+## Documentation
+
+- [Overview, installation, scenarios, and FAQ](https://github.com/gj9159a/codex-restore-chat-context/blob/main/README.md)
+- [Complete skill instructions](https://github.com/gj9159a/codex-restore-chat-context/blob/main/SKILL.md)
+- [Raw skill instructions](https://raw.githubusercontent.com/gj9159a/codex-restore-chat-context/main/SKILL.md)
+- [UI metadata](https://github.com/gj9159a/codex-restore-chat-context/blob/main/agents/openai.yaml)
+
+## Implementation and validation
+
+- [Snapshot, continuation reading, and coverage verification](https://github.com/gj9159a/codex-restore-chat-context/blob/main/scripts/transfer.py)
+- [Checkpoint recovery and reopening](https://github.com/gj9159a/codex-restore-chat-context/blob/main/scripts/recover.cjs)
+- [Python tests](https://github.com/gj9159a/codex-restore-chat-context/blob/main/scripts/test_transfer.py)
+- [Node tests](https://github.com/gj9159a/codex-restore-chat-context/blob/main/scripts/test_recover.cjs)
+- [Releases](https://github.com/gj9159a/codex-restore-chat-context/releases)
+
+## Prerequisites and model choice
+
+Windows, local Codex session files, a signed-in managed Codex runtime, Python 3.11+, Node.js 18+, and chat-listing tools available to the host agent. The optional zstandard Python package enables compressed session archives.
+
+Prefer Luna for routine host-side history reading and reconciliation. The recovery helper must preserve the source checkpoint model. Known gaps or unread continuation pages prevent a claim of complete transfer. Keep raw recovery bundles private.

@@ -1,6 +1,6 @@
 ---
 name: restore-chat-context
-description: Use when a user wants to continue a named Codex Desktop chat in a new chat, recover its latest compaction and subsequent history, or restore context from a frozen local chat on Windows. Luna is recommended for economical token usage and is sufficient for routine context transfer; encrypted checkpoint recovery preserves the source model.
+description: Use when a user wants to continue a long Codex Desktop chat in a new chat, transfer conversation context or unfinished work, recover decisions and tool history, restore a frozen or broken local session, or reuse the latest native compaction checkpoint and its continuation on Windows. Luna is recommended for economical routine context transfer; encrypted checkpoint recovery preserves the source model.
 ---
 
 # Restore Chat Context

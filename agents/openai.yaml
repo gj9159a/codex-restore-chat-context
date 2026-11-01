@@ -1,4 +1,4 @@
 interface:
   display_name: "Restore Chat Context"
-  short_description: "Recover a chat checkpoint and its complete continuation"
+  short_description: "Continue long chats, recover context, and hand off work"
   default_prompt: "Use $restore-chat-context to recover the latest compaction and complete continuation of the chat titled 'Full chat title' into this chat. Prefer Luna for routine transfer work."
